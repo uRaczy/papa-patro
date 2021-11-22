@@ -1,0 +1,49 @@
+/* CSS Reset */
+@import url('./reset.css');
+
+/* Roboto & Tangerine font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tangerine:wght@400;700&display=swap');
+
+/* Webpage styles */
+body, html {
+  height: 200%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url('../images/background-normal.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@media (min-width: 1920px) {
+  body {
+    background-image: url('../images/background-huge.jpg'), url('../images/background-normal.jpg');
+  }
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgb(77, 77, 77);
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.navbar__logo {
+  background-image: url('../images/logo.jpg');
+  background-size: cover;
+  height: 90px;
+  width: 90px;
+}
+
+.navbar__title {
+  font-family: 'Tangerine', cursive;
+  color: #333;
+  font-weight: bold;
+  font-size: 60px;
+  justify-self: center;  
+}
