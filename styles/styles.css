@@ -5,8 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tangerine:wght@400;700&display=swap');
 
 /* Webpage styles */
-body, html {
-  height: 200%;
+body {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -36,14 +35,24 @@ body {
 .navbar__logo {
   background-image: url('../images/logo.jpg');
   background-size: cover;
-  height: 90px;
-  width: 90px;
+  height: 120px;
+  width: 120px;
+  padding: 10px 0;
 }
 
 .navbar__title {
   font-family: 'Tangerine', cursive;
   color: #333;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 100px;
   justify-self: center;  
+}
+
+.main {
+  justify-self: center;
+  width: 70%;
+  margin: 0 auto;
+  height: 700px;
+  background: #fff;
+  opacity: 0.9;
 }
