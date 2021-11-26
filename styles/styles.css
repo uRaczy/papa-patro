@@ -9,12 +9,13 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-body {
+body, html {
   background-image: url('../images/background-normal.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  height: 100%;
 }
 
 @media (min-width: 1920px) {
@@ -35,24 +36,40 @@ body {
 .navbar__logo {
   background-image: url('../images/logo.jpg');
   background-size: cover;
-  height: 120px;
-  width: 120px;
-  padding: 10px 0;
+  height: 80px;
+  width: 80px;
 }
 
 .navbar__title {
   font-family: 'Tangerine', cursive;
   color: #333;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 60px;
   justify-self: center;  
 }
 
 .main {
-  justify-self: center;
-  width: 70%;
-  margin: 0 auto;
-  height: 700px;
-  background: #fff;
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  height: 70%;
+  margin: 100px auto;
+}
+
+.pizzas {
+  width: 65%;
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.pizzas__headline {
+  text-align: center;
+  font-size: 28px;
+  padding: 40px 10px;
+}
+
+.cart {
+  width: 35%;
+  background-color: #165555;
   opacity: 0.9;
 }
