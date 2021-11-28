@@ -73,3 +73,33 @@ body, html {
   background-color: #165555;
   opacity: 0.9;
 }
+
+/* Dynamically made pizza list element with all of it's children elements */
+
+.list__element {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.element__image {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+.element__info {
+
+}
+
+.info__title {
+
+}
+
+.info__ingridients {
+
+}
+
+.element__button {
+  
+}
