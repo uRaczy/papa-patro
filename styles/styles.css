@@ -1,0 +1,142 @@
+/* CSS Reset */
+@import url('./reset.css');
+
+/* Roboto & Tangerine font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tangerine:wght@400;700&display=swap');
+
+/* Webpage styles */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+  background-image: url('../images/background-normal.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+}
+
+@media (min-width: 1920px) {
+  body {
+    background-image: url('../images/background-huge.jpg'), url('../images/background-normal.jpg');
+  }
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgb(77, 77, 77);
+  padding: 0 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.navbar__logo {
+  background-image: url('../images/logo.jpg');
+  background-size: cover;
+  height: 80px;
+  width: 80px;
+}
+
+.navbar__title {
+  font-family: 'Tangerine', cursive;
+  color: #333;
+  font-weight: bold;
+  font-size: 60px;
+  justify-self: center;  
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: 100px auto;
+}
+
+.pizzas {
+  width: 65%;
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.pizzas__headline {
+  text-align: center;
+  font-size: 28px;
+  padding: 40px 10px;
+}
+
+/* Dynamically made pizza list element with all of it's children elements */
+
+.pizzaList__element {
+  display: flex;
+  padding: 10px;
+  background-color: #dddddd;
+  border-radius: 5px;
+  margin: 10px;
+  gap: 10px;
+}
+
+.element__image {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.element__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info__title {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info__ingredients {
+  font-size: 14px;
+}
+
+.element__summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+/* Cart */
+
+.cart__headline {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  padding: 40px;
+}
+
+/* Cart */
+
+.cart {
+  width: 35%;
+  background-color: #165555;
+  opacity: 0.9;
+}
+
+.cartList__element {
+  display: grid;
+  color: #fff;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+}
+
+.cartList__total {
+  text-align: right;
+  color: #fff;
+  font-size: 18px;
+  margin: 30px 10px;
+}
