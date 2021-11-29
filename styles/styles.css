@@ -51,8 +51,7 @@ body, html {
 .main {
   display: flex;
   justify-content: center;
-  width: 75%;
-  height: 70%;
+  width: 85%;
   margin: 100px auto;
 }
 
@@ -68,38 +67,76 @@ body, html {
   padding: 40px 10px;
 }
 
-.cart {
-  width: 35%;
-  background-color: #165555;
-  opacity: 0.9;
-}
-
 /* Dynamically made pizza list element with all of it's children elements */
 
-.list__element {
+.pizzaList__element {
   display: flex;
-  flex-direction: row;
   padding: 10px;
+  background-color: #dddddd;
+  border-radius: 5px;
+  margin: 10px;
+  gap: 10px;
 }
 
 .element__image {
   width: 80px;
   height: 80px;
   margin: 10px;
+  background-size: cover;
+  background-position: center;
 }
 
 .element__info {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .info__title {
-
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.info__ingridients {
-
+.info__ingredients {
+  font-size: 14px;
 }
 
-.element__button {
-  
+.element__summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+/* Cart */
+
+.cart__headline {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  padding: 40px;
+}
+
+/* Cart */
+
+.cart {
+  width: 35%;
+  background-color: #165555;
+  opacity: 0.9;
+}
+
+.cartList__element {
+  display: grid;
+  color: #fff;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+}
+
+.cartList__total {
+  text-align: right;
+  color: #fff;
+  font-size: 18px;
+  margin: 30px 10px;
 }
